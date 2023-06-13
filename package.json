@@ -3,19 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "sst bind next dev",
+    "//first_comment": "NOTE: Changed next build to sst bind next build",
+    "build": "sst bind next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.351.0",
+    "@aws-sdk/client-s3": "^3.350.0",
+    "@aws-sdk/lib-dynamodb": "^3.351.0",
+    "@aws-sdk/s3-request-presigner": "^3.350.0",
     "autoprefixer": "10.4.14",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
+    "isomorphic-dompurify": "^1.6.0",
     "next": "13.4.5",
+    "next-auth": "^4.22.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "twig": "^1.16.0"
+  },
+  "devDependencies": {
+    "aws-cdk-lib": "2.79.1",
+    "constructs": "10.1.156",
+    "sst": "^2.13.1"
   }
 }

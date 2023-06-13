@@ -1,0 +1,12 @@
+{
+    "navbar": 
+    {
+     "tabs": [
+        { "name": "Features", "link": "/features" },
+        { "name": "Pricing", "link": "/pricing" },
+        { "name": "Partners", "link": "/partners" },
+        { "name": "Help", "link": "/help"}
+     ]   
+    }
+  }
+  
